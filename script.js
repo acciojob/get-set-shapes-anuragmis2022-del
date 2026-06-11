@@ -2,16 +2,16 @@
 class Rectangle {
 	constructor(width, height)
 	{
-		this.width=w
-		this.height=h
+		this.width=width
+		this.height=height
 	}
 	get width()
 	{
-		return this.width
+		return this._width
 	}
-	het height()
+		get height()
 	{
-		return this.height
+		return this._height
 	}
 getArea()
 	{
@@ -21,14 +21,15 @@ getArea()
 }
 
 class Square extends Rectangle {
-	constructor(width, height, side )
+	constructor(side )
 	{
-		super(width, height)
-		this.side=side
+		super(side,side)
+		
 	}
-	getperimeter()
+	square.getPerimeter()
 	{
 		let peri= 4*this.side
+		return peri
 	}
 		
 }
